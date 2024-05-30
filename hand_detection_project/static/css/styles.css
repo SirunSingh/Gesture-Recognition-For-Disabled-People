@@ -1,0 +1,90 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Change background to transparent */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 70px; /* Increase logo size */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333; /* Change navbar link color */
+    font-weight: bold;
+    font-size: 18px; /* Increase font size */
+    transition: color 0.3s; /* Add transition effect */
+}
+
+.menu ul li a:hover {
+    color: #555; /* Change color on hover */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 999;
+}
+
+.content h1 {
+    font-size: 36px; /* Increase font size for Recognition */
+}
+
+.content p {
+    font-size: 24px; /* Increase font size for Test */
+}
+
+.hover-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black; /* Change button background color */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hover-button:hover {
+    background-color: #333; /* Darken button color on hover */
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
